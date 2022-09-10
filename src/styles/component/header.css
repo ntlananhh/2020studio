@@ -1,0 +1,30 @@
+@import url('http://fonts.cdnfonts.com/css/utm-avo');
+
+* {
+  font-family: "UTM Avo", sans-serif;
+}
+body {
+  height: 2000px;
+}
+.navbar .navbar-brand {
+  font-size: 30px;
+}
+.navbar .nav-item {
+  padding: 10px 20px;
+}
+.navbar .nav-link {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.fa-bars {
+  color: gray;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-collapse{
+        background-color: light-gray;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    }
+}
+  
