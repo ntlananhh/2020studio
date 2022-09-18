@@ -6,6 +6,13 @@
 body {
   height: 2000px;
 }
+.header{
+  background: white;
+  z-index: 100;
+}
+.navbar{
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
 .navbar .navbar-brand {
   font-size: 30px;
 }
@@ -16,9 +23,40 @@ body {
   font-size: 20px;
   margin-left: 10px;
 }
+.navbar-nav{
+  flex: 1 1 auto;
+}
 .fa-bars {
   color: gray;
   font-size: 30px;
+}
+.project-link{
+  margin-right: 4px;
+}
+.sub-nav{
+  transform-origin: top;
+  transition: all 0.6s ease;
+  z-index: 10;
+}
+.sub-nav .nav-link{
+  font-size: 18px;
+  color: gray;
+}
+.sub-nav .nav-link:hover{
+  color: black;
+}
+.sub-nav .list-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 50px;
+  list-style-type: none;
+}
+.sub-nav .list-group li{
+  padding: 15px;
+}
+.sub-nav-mobile{
+  display: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -26,5 +64,19 @@ body {
         background-color: light-gray;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     }
+    
 }
   
+@media only screen and (max-width: 993px){
+  .sub-nav-mobile{
+    display: block;
+  }
+ 
+  .sub-nav .list-group{
+    flex-direction: column;
+    gap: 0px;
+  }
+  .sub-nav a.nav-link{
+    text-indent: 60px;
+  }
+}
