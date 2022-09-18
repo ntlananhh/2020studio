@@ -2,13 +2,14 @@ import React from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { Link } from 'react-router-dom';
 
-function ProjectList() {
+function ProjectList({category}) {
+
   const projectList=[
     {
       "id": 1,
       "name": "Project 1",
       "countDetail": 10,
-      "category": 'housing'
+      "category": 'public-work'
     },
     {
       "id": 2,
@@ -20,7 +21,7 @@ function ProjectList() {
       "id": 3,
       "name": "Project 1",
       "countDetail": 10,
-      "category": 'housing'
+      "category": 'religious-work'
     },
     {
       "id": 4,
@@ -32,9 +33,10 @@ function ProjectList() {
       "id": 5,
       "name": "Project 1",
       "countDetail": 10,
-      "category": 'housing'
+      "category": 'interior'
     }
   ]
+  const list= category == '' ? projectList : projectList.filter((project => project.category== category));
   return (
     <Splide aria-label="My Favorite Images" autoWidth={true} type="loop"
       options={{
@@ -42,7 +44,7 @@ function ProjectList() {
         height: '450px',
         autoWidth: true,
       }}>
-      {projectList.map((item, index) =>
+      {list.length ? list.map((item, index) =>
         <SplideSlide key={index}>
           <Link to={{ 
                     pathname: `/project/${item.name.replace(/\s/g, '-') }`, 
@@ -55,7 +57,9 @@ function ProjectList() {
             </div>
             </Link>
         </SplideSlide>
-      )} 
+      )
+    :
+    <>empty</>} 
     </Splide>
 
   );
