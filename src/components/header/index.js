@@ -19,7 +19,7 @@ function Header() {
                             <li className="nav-item" onClick={()=> setShow(!show)} >
                                 <span className="nav-link">
                                     <span className="project-link">Projects</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=" bi bi-chevron-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/> </svg>                                </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className=" bi bi-chevron-down" viewBox="0 0 16 16"> <path fillRule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/> </svg>                                </span>
                             </li>
                         
                             <div 
@@ -54,23 +54,25 @@ function Header() {
                     
                 </div>
             </nav>
-            <div 
-                className="sub-nav d-none d-md-block" 
-                style={ { transform: `scaleY(${show ? 1 : 0})`, height:  `${show ? 60 : 0}px` } }>
-                <ul className="list-group">
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/housing">Housing</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/public-work">Public work</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/religious-work">Religious work</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/interior">Interior</Link>
-                    </li>           
-                </ul>
+            <div className='container'>
+                <div 
+                    className="sub-nav d-none d-md-block" 
+                    style={ { transform: `scaleY(${show ? 1 : 0})`, height:  `${show ? 60 : 0}px` } }>
+                    <ul className="list-group">
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/housing">Housing</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/public-work">Public work</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/religious-work">Religious work</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/interior">Interior</Link>
+                        </li>           
+                    </ul>
+                </div>
             </div>
         </div>
     );

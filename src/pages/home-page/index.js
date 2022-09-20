@@ -5,6 +5,6 @@ import { useParams } from "react-router-dom";
 export default function HomePage() {
   let category = useParams().category;
   return <Layout children={true}>
-            <ProjectList category={category ? category : ''} />
+            <ProjectList category={category ? category : 'all'} />
         </Layout>;
 }
