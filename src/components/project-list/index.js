@@ -61,7 +61,7 @@ function ProjectList({ category }) {
       <Splide aria-label="My Favorite Images" autoWidth={true} type={list.length >= 2 ? 'loop' : ''}
         options={{
           type: 'loop',
-          height: '450px',
+          height: '75vh',
           autoWidth: list.length >= 2 ? true : false,
           arrows: list.length >= 2 ? true : false,
           pagination: false

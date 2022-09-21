@@ -47,7 +47,7 @@ const ProjectDetail = () => {
         autoWidth={true} type="loop"
         options={{
           type: 'loop',
-          height: '450px',
+          height: '75vh',
           autoWidth: true,
         }}
       >
