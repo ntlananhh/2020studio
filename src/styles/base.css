@@ -2,6 +2,7 @@
 @import './component/footer.css';
 @import './component/project-list.css'; 
 @import './component/not-found-page.css'; 
+@import './component/about-us.css';
 @import "react-alice-carousel/lib/alice-carousel.css";
 @import url('http://fonts.cdnfonts.com/css/utm-avo');
 
