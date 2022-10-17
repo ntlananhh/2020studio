@@ -2,12 +2,12 @@
 import React from 'react';
 import Header from '../components/header/index.js'
 import Footer from '../components/footer/index.js'
-function Layout({children}) {
+function Layout({children, aboutus}) {
     return (
         <>
             <Header />
             {children}
-            <Footer/>
+            <Footer aboutus={aboutus} />
         </>
     );
   }

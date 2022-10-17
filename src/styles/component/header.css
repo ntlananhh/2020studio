@@ -13,7 +13,7 @@
   padding: 10px 20px;
 }
 .navbar .nav-link {
-  font-size: 20px;
+  font-size: 16x;
   margin-left: 10px;
 }
 .navbar-nav{
@@ -32,7 +32,7 @@
   z-index: 10;
 }
 .sub-nav .nav-link{
-  font-size: 18px;
+  font-size: 16px;
   color: gray;
 }
 .sub-nav .nav-link:hover{
@@ -57,7 +57,6 @@
         background-color: light-gray;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     }
-    
 }
   
 @media only screen and (max-width: 993px){
@@ -71,5 +70,10 @@
   }
   .sub-nav a.nav-link{
     text-indent: 60px;
+  }
+}
+@media only screen and (min-width: 992px){
+  .header{
+    height: 10vh;
   }
 }

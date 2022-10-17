@@ -7,7 +7,7 @@ function Header() {
             <nav className="navbar  navbar-expand-lg">
                 <div className="container">
                     <Link className="navbar-brand" to="/">
-                        <img src="./assets/logo.jpg" class="about-us-img" alt="" />
+                        <img src="../assets/logo.jpg" class="about-us-img" alt="" />
                     </Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i className="fas fa-bars"></i>
@@ -58,7 +58,7 @@ function Header() {
             </nav>
             <div className='container'>
                 <div 
-                    className="sub-nav d-none d-md-block" 
+                    className="sub-nav d-none d-lg-block" 
                     style={ { transform: `scaleY(${show ? 1 : 0})`, height:  `${show ? 60 : 0}px` } }>
                     <ul className="list-group">
                         <li className="nav-item">

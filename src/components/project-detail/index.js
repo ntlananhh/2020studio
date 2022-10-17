@@ -32,8 +32,8 @@ const ProjectDetail = () => {
     },
     {
       "id": 5,
-      "name": "Project 5",
-      "countDetail": 5,
+      "name": "Na House",
+      "countDetail": 22,
       "category": 'interior'
     }
   ]
@@ -44,19 +44,18 @@ const ProjectDetail = () => {
   return (
     <>
       <Splide aria-label="Project detail" id="hi"
-        autoWidth={true} type="loop"
-        options={{
+          autoWidth={true} type="loop"
+          options={{
           type: 'loop',
-          height: '75vh',
+          height: '70vh',
           autoWidth: true,
+          pagination: rows.length > 5 ? false : true
         }}
       >
         {
           rows.map((row) => {
             return <SplideSlide key={row}>
-              <div className="img-hover-zoom">
-                <img className="test" src={'/assets/project-detail/' + project[0].name.replace(/\s/g, '-').toLowerCase() + '-' + row + '.jpg'} alt="" />
-              </div>
+                <img className="test px-1" src={'/assets/project-detail/' + project[0].name.replace(/\s/g, '-').toLowerCase() + '-' + row + '.jpg'} alt="" />
             </SplideSlide>
           })
         }
