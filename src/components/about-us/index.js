@@ -3,8 +3,8 @@ import React from 'react';
 function AboutUs() {
     return (
         <div className=" about-us mb-5">      
-            <div class="about-us-content-container">  
-                <img src="./assets/about-us.jpg" class="about-us-img" alt="" />
+            <div className="about-us-content-container">  
+                <img src="./assets/about-us.jpg" className="about-us-img" alt="" />
                 <div className='about-us-content container-fluid row'>
                     <div className='about-us-header col-md p-0 text-uppercase'>
                         <h1 className='align-top pl-2 m-0'>About us</h1>

@@ -3,6 +3,7 @@ import HomePage from './pages/home-page/index.js';
 import NotFoundPage from './pages/not-found/index.js';
 import ProjectDetailPage from './pages/project-detail';
 import AboutUsPage from './pages/about-us';
+import ContactPage from './pages/contact';
 import { Route, Routes } from "react-router-dom";
 // Default theme
 import '@splidejs/react-splide/css';
@@ -18,7 +19,7 @@ function App() {
         <Route exact path="/:category" element={<HomePage/>} />
         <Route exact path="/project/:name" element={<ProjectDetailPage/>} />
         <Route exact path="/about-us" element={<AboutUsPage />} /> 
-        {/* <Route exact path="/services" element={<Services />} />  */}
+        <Route exact path="/contact" element={<ContactPage />} /> 
         <Route exact path="*" element={<NotFoundPage />} />
       </Routes>
     </div>

@@ -85,7 +85,7 @@ function ProjectList({ category }) {
           }}>
           {list.length ? list.map((item, index) =>
             <SplideSlide key={index} className="splide-slide">
-              <div class="project-tag">
+              <div className="project-tag">
                 <h4>{item.name}</h4>
                 <p className="m-0">Area: {item.area}m<sup>2</sup></p>
                 <p className="m-0">Year: {item.year}</p>

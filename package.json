@@ -13,6 +13,7 @@
     "react-awesome-lightbox": "^1.8.1",
     "react-dom": "^18.2.0",
     "react-fullscreen-image": "^0.0.3",
+    "react-iframe": "^1.8.4",
     "react-multi-carousel": "^2.8.2",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
