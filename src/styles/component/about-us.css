@@ -5,12 +5,18 @@
     align-items: center;
     flex-direction: column;
     padding: 0;
+    height: 74.5vh;
 }
 
 .about-us-img{ 
     width: 100%;
 }
+.about-us-content-container img{
+    height: 55vh;
+    object-fit: cover;
+    object-position: right 80%;
 
+}
 .about-us-content{
     padding: 20px 20px 0;
     margin: 0;
@@ -34,7 +40,7 @@
         margin-right: 20px;
     }
     .about-us-content{
-        padding: 50px 20px 0;
+        padding: 30px 20px 0;
         margin: 0;
     }
     .about-us-headline{
