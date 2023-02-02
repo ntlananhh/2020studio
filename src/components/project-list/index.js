@@ -26,17 +26,17 @@ function ProjectList({ category }) {
   const projectList = [
     {
       "id": 1,
-      "name": "Project 1",
-      "countDetail": 5,
-      "category": 'public-work',
+      "name": "15F Building",
+      "countDetail": 8,
+      "category": 'housing',
       "area": 200,
       "year": "2022",
       "region": "Hue, Viet Nam"
     },
     {
       "id": 2,
-      "name": "Project 2",
-      "countDetail": 5,
+      "name": "Na House",
+      "countDetail": 10,
       "category": 'housing',
       "area": 550,
       "year": "2021",
@@ -44,9 +44,9 @@ function ProjectList({ category }) {
     },
     {
       "id": 3,
-      "name": "Project 3",
-      "countDetail": 5,
-      "category": 'religious-work',
+      "name": "Tan An Villa",
+      "countDetail": 12,
+      "category": 'housing',
       "area": 500,
       "year": "2022",
       "region": "Ho Chi Minh city, Viet Nam"
@@ -55,14 +55,14 @@ function ProjectList({ category }) {
       "id": 4,
       "name": "Project 4",
       "countDetail": 5,
-      "category": 'housing',
+      "category": 'public-work',
       "area": 300,
       "year": "2022",
       "region": "Da Nang, Viet Nam"
     },
     {
       "id": 5,
-      "name": "Na House",
+      "name": "Project 5",
       "countDetail": 5,
       "category": 'interior',
       "area": 300,
@@ -78,7 +78,7 @@ function ProjectList({ category }) {
         <Splide aria-label="My Favorite Images" autoWidth={true} type={list.length >= 2 ? 'loop' : ''}
           options={{
             type: 'loop',
-            height: '70vh',
+            height: '45vh',
             autoWidth: list.length >= 2 ? true : false,
             arrows: list.length > 2 ? true : false,
             pagination: list.length >= 5 ? false : true

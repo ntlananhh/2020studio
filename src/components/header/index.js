@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 function Header() {
     const [show, setShow] = useState(false);
+    const [active, setActive] = useState('home');
+
     return (
         <div className="header sticky-top">
-            <nav className="navbar  navbar-expand-lg">
+            <nav className="navbar navbar-expand-lg">
                 <div className="container">
                     <Link className="navbar-brand" to="/">
                         <img src="../assets/logo.jpg" className="about-us-img" alt="" />
@@ -15,7 +17,7 @@ function Header() {
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto w-100 justify-content-end">
-                            <li className="nav-item active">
+                            <li className="nav-item" >
                                 <Link className="nav-link" to="/">Home</Link>
                             </li>
                             <li className="nav-item" onClick={()=> setShow(!show)} >
@@ -42,7 +44,7 @@ function Header() {
                                     </li>           
                                 </ul>
                             </div>
-                            <li className="nav-item">
+                            <li className="nav-item" onClick={()=> setActive('aboutus')}>
                                 <Link className="nav-link" to="/about-us">About</Link>
                             </li>
                             <li className="nav-item">
@@ -56,9 +58,9 @@ function Header() {
                     
                 </div>
             </nav>
-            <div className='container'>
+            <div className='container-fluid p-0'>
                 <div 
-                    className="sub-nav d-none d-lg-block" 
+                    className={`sub-nav d-none d-lg-block ${active==='aboutus' ? "bg-light" : ""}`} 
                     style={ { transform: `scaleY(${show ? 1 : 0})`, height:  `${show ? 60 : 0}px` } }>
                     <ul className="list-group">
                         <li className="nav-item">

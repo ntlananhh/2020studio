@@ -8,20 +8,20 @@ const ProjectDetail = () => {
   const projectList = [
     {
       "id": 1,
-      "name": "Project 1",
-      "countDetail": 5,
+      "name": "15F Building",
+      "countDetail": 8,
       "category": 'public-work'
     },
     {
       "id": 2,
-      "name": "Project 2",
-      "countDetail": 5,
+      "name": "Na House",
+      "countDetail": 10,
       "category": 'housing'
     },
     {
       "id": 3,
-      "name": "Project 3",
-      "countDetail": 5,
+      "name": "Tan An Villa",
+      "countDetail": 12,
       "category": 'religious-work'
     },
     {
@@ -47,7 +47,7 @@ const ProjectDetail = () => {
           autoWidth={true} type="loop"
           options={{
           type: 'loop',
-          height: '70vh',
+          height: '45vh',
           autoWidth: true,
           pagination: rows.length > 5 ? false : true
         }}
