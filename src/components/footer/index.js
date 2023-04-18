@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Footer({aboutus}) {
+function Footer() {
     return (
-        <div className= {`footer ${aboutus ? 'aboutus' : ''} `}>
+        <div className= "footer">
             <div className='social-icon-group d-flex justify-content-center'>
                 <span className="social-icon">
                     <a href='https://getbootstrap.com/docs/4.0/utilities/flex/'><i className="fab fa-facebook-f"></i></a>

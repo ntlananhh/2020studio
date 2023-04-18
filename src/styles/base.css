@@ -4,6 +4,8 @@
 @import './component/not-found-page.css'; 
 @import './component/about-us.css';
 @import './component/contact.css';
+@import './component/project-preview.css';
+
 @import "react-alice-carousel/lib/alice-carousel.css";
 @import url('https://fonts.cdnfonts.com/css/utm-avo');
 

@@ -1,10 +1,22 @@
 .test{
-    width: auto;
-    height: 100%;
+    width: auto !important;
+    height: 100%  !important;
 }
+.splide__arrow svg {
+  fill: rgb(90, 89, 89) !important;
+  height: 2.5em;
+  transition: fill .2s linear;
+  width: 2.5em;
+}
+
+.splide__arrow svg:hover {
+  fill: rgb(213, 13, 13);
+}
+
 .project-slider{
   text-align: center;
   padding-top: 6%;
+  height: 77.5vh;
 }
 .img-hover-zoom {
   height: 45vh; 
@@ -16,18 +28,24 @@
 .img-hover-zoom:hover img {
   transform: scale(1.05);
 }
-
+.updating-text{
+  width: 100%;
+  height: 400px;
+  color:rgb(90, 89, 89);
+}
   @media only screen and (max-width: 993px){
     #splide01 {
       padding: 20px 15px;
     }
   }
   
-  .splide-slide{
-    position: relative;
-  }
-
-
+.splide-slide{
+  width: fit-content;
+}
+.project-container{
+  width: fit-content;
+  margin: 0 auto;
+}
 .project-tag{
   position: absolute;
   top: 50px;

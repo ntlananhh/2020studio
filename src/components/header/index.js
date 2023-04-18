@@ -6,7 +6,7 @@ function Header() {
 
     return (
         <div className="header sticky-top">
-            <nav className="navbar navbar-expand-lg">
+            <nav className="navbar navbar-expand-lg p-0">
                 <div className="container">
                     <Link className="navbar-brand" to="/">
                         <img src="../assets/logo.jpg" className="about-us-img" alt="" />
@@ -15,7 +15,7 @@ function Header() {
                         <i className="fas fa-bars"></i>
                     </button>
 
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div className="collapse navbar-collapse bg-white" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto w-100 justify-content-end">
                             <li className="nav-item" >
                                 <Link className="nav-link" to="/">Home</Link>
@@ -25,12 +25,11 @@ function Header() {
                                     <span className="project-link">Projects</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className=" bi bi-chevron-down" viewBox="0 0 16 16"> <path fillRule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/> </svg>                                </span>
                             </li>
-                        
                             <div 
                                 className="sub-nav sub-nav-mobile" 
                                 style={ { transform: `scaleY(${show ? 1 : 0})`, height:  `${show ? 280 : 0}px` } }>
                                 <ul className="list-group">
-                                    <li className="nav-item">
+                                    <li className="nav-item {activeNavItem === 'housing' ? 'active' : ''} onClick={() => handleNavItemOnClick('housing')}">
                                         <Link className="nav-link" to="/housing">Housing</Link>
                                     </li>
                                     <li className="nav-item">
@@ -55,10 +54,9 @@ function Header() {
                             </li>
                         </ul>
                     </div>
-                    
                 </div>
             </nav>
-            <div className='container-fluid p-0'>
+            <div className='container-fluid p-0 bg-white'>
                 <div 
                     className={`sub-nav d-none d-lg-block ${active==='aboutus' ? "bg-light" : ""}`} 
                     style={ { transform: `scaleY(${show ? 1 : 0})`, height:  `${show ? 60 : 0}px` } }>
@@ -74,7 +72,10 @@ function Header() {
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/interior">Interior</Link>
-                        </li>           
+                        </li>  
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/landscape">Landscape</Link>
+                        </li>          
                     </ul>
                 </div>
             </div>

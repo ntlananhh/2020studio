@@ -2,7 +2,7 @@ import React from 'react';
 
 function AboutUs() {
     return (
-        <div className=" about-us mb-5">      
+        <div className="about-us mb-5">      
             <div className="about-us-content-container">  
                 <img src="./assets/about-us.jpg" className="about-us-img" alt="" />
                 <div className='about-us-content container-fluid row'>

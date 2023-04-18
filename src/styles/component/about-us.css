@@ -5,7 +5,8 @@
     align-items: center;
     flex-direction: column;
     padding: 0;
-    height: 74.5vh;
+    height: 77.5vh;
+    overflow-y: scroll;
 }
 
 .about-us-img{ 

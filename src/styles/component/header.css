@@ -2,6 +2,7 @@
 .header{
   background: white;
   z-index: 100;
+  max-height: 60px;
 }
 .navbar{
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
@@ -11,6 +12,9 @@
 }
 .navbar .nav-item {
   padding: 10px 20px;
+}
+.nav-item.active{
+  font-weight: bold;
 }
 .navbar .nav-link {
   font-size: 16x;
@@ -55,6 +59,7 @@
 
 @media only screen and (max-width: 600px) {
     .navbar-collapse{
+        width: 100vw;
         background-color: light-gray;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     }
@@ -63,6 +68,7 @@
 @media only screen and (max-width: 993px){
   .sub-nav-mobile{
     display: block;
+    padding: 0 50px;
   }
  
   .sub-nav .list-group{
