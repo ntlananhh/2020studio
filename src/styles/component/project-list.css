@@ -1,6 +1,7 @@
 .test{
     width: auto !important;
-    height: 100%  !important;
+    height: 45vh !important;
+    cursor: pointer;
 }
 .splide__arrow svg {
   fill: rgb(90, 89, 89) !important;
@@ -23,10 +24,16 @@
   overflow: hidden; 
 }
 .img-hover-zoom img {
-  transition: transform .5s ease;
+  transition: all .9s ease;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
 }
 .img-hover-zoom:hover img {
-  transform: scale(1.05);
+  transform: scale(1.01);
+  filter: none;
+  -webkit-filter: grayscale(0);
 }
 .updating-text{
   width: 100%;
@@ -61,13 +68,13 @@
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 .project-tag p{
-  font-size: 13px;
+  font-size: 12px;
   opacity: 0;
   visibility: hidden;
 }
 .project-tag h4{
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   opacity: 0;
   visibility: hidden;
 }
