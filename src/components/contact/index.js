@@ -1,5 +1,4 @@
 import React from 'react';
-import Iframe from 'react-iframe'
 
 function Contact() {
     return (
@@ -7,13 +6,12 @@ function Contact() {
             <div className="contact-container container">
                 <div className="row">
                     <div className="col-md-8 container-map p-0">
-                        <Iframe url="https://www.google.com/maps/embed/v1/place?q=139%20L%C3%BD%20Ch%C3%ADnh%20Th%E1%BA%AFng%2C%20V%C3%B5%20Th%E1%BB%8B%20S%C3%A1u%2C%20Qu%E1%BA%ADn%203%2C%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vi%E1%BB%87t%20Nam&key=AIzaSyDc7PnOq3Hxzq6dxeUVaY8WGLHIePl0swY"
+                        <iframe title="2020 Studio location" src="https://www.google.com/maps/embed/v1/place?q=139%20L%C3%BD%20Ch%C3%ADnh%20Th%E1%BA%AFng%2C%20V%C3%B5%20Th%E1%BB%8B%20S%C3%A1u%2C%20Qu%E1%BA%ADn%203%2C%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vi%E1%BB%87t%20Nam&key=AIzaSyDc7PnOq3Hxzq6dxeUVaY8WGLHIePl0swY"
                             width="100%"
                             height="100%"
                             id=""
                             className="iframe"
-                            display="block"
-                            position="relative"
+                            style={{ display: "block", position: "relative", border: 0 }}
                             allowFullScreen/>
                     </div>
                     <div className="col-md contact-content p-md-5 p-3 mt-3 mt-md-0 ">

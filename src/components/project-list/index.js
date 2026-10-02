@@ -33,17 +33,7 @@ function ProjectList({ category }) {
   if ((category !== 'all' && categoryList.find(cate => cate.name === category) !== 'undefined') || category === 'all') {
     return (
       <>
-        <Splide aria-label="My Favorite Images" autoWidth={true} type={list.length >= 2 ? 'loop' : ''}
-              renderControls={() => (
-                <div className="splide__arrows">
-                    <div className=" splide__arrow--prev" role="button">
-                      pre
-                    </div>
-                    <div className="splide__arrow--next" role="button">
-                      next
-                    </div>
-                </div>
-            )}
+        <Splide aria-label="My Favorite Images"
           options={{
             type: 'loop',
             height: '45vh',
