@@ -7,7 +7,7 @@ import Modal from 'react-bootstrap/Modal';
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 // import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-function MyVerticallyCenteredModal(props) {
+function MyVerticallyCenteredModal({ imgUrl, ...props }) {
   return (
     <Modal
       {...props}
@@ -23,20 +23,20 @@ function MyVerticallyCenteredModal(props) {
             initialPositionX={1}
             initialPositionY={1}
           >
-            {({ zoomIn, zoomOut, resetTransform, ...rest }) => (
+            {({ zoomIn, zoomOut, resetTransform }) => (
               <React.Fragment>
                 <TransformComponent>
-                  <img className="hihi" src={props.imgUrl} alt="test" />
+                  <img className="hihi" src={imgUrl} alt="Project detail" />
 
                 </TransformComponent>
                 <div className="tools">
-                  <button className="btn btn-outline-secondary" onClick={() => zoomIn()}>
+                  <button className="btn btn-outline-secondary" aria-label="Zoom in" onClick={() => zoomIn()}>
                     <img src="/assets/icons/zoom-in.png" alt="zoom-in" />
                   </button>
-                  <button className="btn btn-outline-secondary" onClick={() => zoomOut()}>
+                  <button className="btn btn-outline-secondary" aria-label="Zoom out" onClick={() => zoomOut()}>
                     <img src="/assets/icons/zoom-out.png" alt="zoom-out" />
                   </button>
-                  <button className="btn btn-outline-secondary" onClick={() => resetTransform()}>
+                  <button className="btn btn-outline-secondary" aria-label="Reset zoom" onClick={() => resetTransform()}>
                     <img src="/assets/icons/1-1-size.png" alt="zoom-out" />
                   </button>
                 </div>
@@ -65,7 +65,6 @@ const ProjectDetail = () => {
     return (
       <>
         <Splide aria-label="Project detail" id="hi"
-          autoWidth={true} type="loop"
           options={{
             type: 'loop',
             height: '45vh',
